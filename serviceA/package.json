@@ -1,0 +1,24 @@
+{
+  "name": "@finnair/service-a",
+  "version": "1.0.0",
+  "description": "service that receives flight data and send it to service B through RabbitMQ",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "tsc-watch --noClear -p ./tsconfig.json --onSuccess \"node ./dist/index.js\""
+  },
+  "author": "Adhavann Ramalingam",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/amqplib": "^0.10.1",
+    "@types/node": "^18.16.0",
+    "nodemon": "^3.1.3",
+    "tsc-watch": "^6.2.0",
+    "typescript": "^5.0.4"
+  },
+  "dependencies": {
+    "amqplib": "^0.10.3",
+    "dotenv": "^16.0.3",
+    "ts-node": "^10.9.2"
+  }
+}
